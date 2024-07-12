@@ -146,7 +146,7 @@ body{
     margin-left: 5%;
     min-height: 30vh;
     width: 90%;
-    min-width: min(50%,180px);
+    /* min-width: min(50%,180px); */
     background-color: rgb(229, 105, 126);
     text-align: center;
 }
