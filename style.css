@@ -14,6 +14,7 @@ body{
     margin-right: 50%;
     margin-top: 5vh;
     translate: -50% ;
+    min-height: 100vh;
 }
 .header_icon{
     position: relative;
@@ -28,7 +29,6 @@ body{
     top: 20%;
     width: 100%;
     height: 50%;
-    /* border: 2px solid white; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,13 +42,12 @@ body{
     min-width: 200px;
     padding-top: 10%;
     padding-bottom: 10%;
-    /* border: 2px solid white; */
+    border: 2px solid white;
     background-color: rgba(255,255, 255, 0.7);
 }
 .para1{
     min-width: 200px;
     min-height:100%;
-    /* border: 4px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,7 +61,7 @@ body{
 .section3{
     position: relative;
     min-width: 100%;
-    min-width: min(50%,200px);
+    min-width: 200px;
     padding-top: 10%;
     padding-bottom: 10%;
     background-color: rgba(0,0, 0, 0.7);
@@ -163,7 +162,7 @@ body{
     min-width: min(50%,180px);
     width: 81.9%;
     background-color:  rgba(255,255, 255, 0.9);
-    /* border: 3px solid white; */
+    border: 3px solid white;
     display: flex;
     flex-direction: column;
     justify-content: center;
