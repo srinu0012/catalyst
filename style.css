@@ -22,7 +22,6 @@ body{
     min-width: 200px;
     min-height: 40vh;
     background-color: rgba(0,0, 0, 0.7);
-
 }
 .icon{
     position: absolute;
@@ -89,6 +88,31 @@ body{
 .para2 button{
     padding: 5px 2em;
     background-color: rgb(229, 105, 126);
+    margin-top: 10px;
+    box-shadow: 5px 5px 5px black;
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.para2 button::before{
+    position: absolute;
+    top: 0;
+    left:0px;
+    width: 0%;
+    height: 0%;
+    background-color: black;
+    content: "";
+    transition: all 2s;
+    z-index: -1;
+    border-radius: 10px;
+}
+.para2 button:hover::before{
+    scale: 1.1;
+    animation: color 2s 1 forwards ;
+
+}
+.para2 button:hover{
+    scale: 1.1;
 }
 .section4{
     position: relative;
@@ -215,15 +239,66 @@ body{
 }
 .inputbox input{
     padding: 20px;
+    border-radius: 10px;
+}
+.inputbox textarea{
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 20px;
 }
 .inputbox .button2{
     text-align: right;
 }
 .inputbox button{
+    position: relative;
     font-size: x-large;
-    padding: 20px 50px;
+    padding: 2% 5%;
     background-color: rgb(229, 105, 126);
     color: #fff;
+    cursor:pointer;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.inputbox button::before{
+    position: absolute;
+    top: 0;
+    left:0px;
+    width: 0%;
+    height: 0%;
+    background-color: black;
+    content: "";
+    transition: all 2s;
+    z-index: -1;
+    border-radius: 10px;
+}
+@keyframes color {
+    0%{
+        width: 0;
+        height: 0;
+        left:0px;
+    }
+    55%{
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+    75%{
+        width: 100%;
+        height: 100%;
+        left: -10px;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+}
+.inputbox button:hover:before{
+    animation: color 2s 1 forwards ;
+}
+.inputbox button:hover{
+    scale: 1.1;
 }
 footer{
     height:100px;
