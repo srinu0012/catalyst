@@ -8,6 +8,33 @@ body{
     min-height: 100vh;
     background: url(./images/tm-catalyst-bg.jpg);
 }
+#dark{
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 2vh;
+    background-color: rgba(229, 105, 126,0.6);
+    margin-left: 50%;
+    translate: -50%;
+    cursor: pointer;
+}
+#button{
+    display: none;
+}
+#button:checked ~ .container{
+    filter: invert(1) hue-rotate(180deg);
+    transition:all 0.32s ease-in;
+}
+:not(#button:checked) ~ .container{
+    transition:all 0.32s ease-in;   
+}
+:not(#button:checked) ~ .container img{
+    transition:all 0.32s ease-in;   
+}
+#button:checked ~ .container img{
+    filter: invert(1) hue-rotate(180deg);
+    transition:all 0.32s ease-in;
+}
 .container{
     min-width: 80vw;
     margin-left:50%;
@@ -81,7 +108,7 @@ body{
 .para2 p{
     margin-bottom: 10px;
 }
-.para2 #button{
+.para2 #button1{
     margin-top: 10px;
     margin-left: 30%;
 }
@@ -256,7 +283,7 @@ body{
     background-color: rgb(229, 105, 126);
     color: #fff;
     cursor:pointer;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 5px 5px 5px white;
     border-radius: 10px;
     overflow: hidden;
 }
